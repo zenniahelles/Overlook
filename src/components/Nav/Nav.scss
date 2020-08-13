@@ -1,0 +1,58 @@
+.NavGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background:black;
+    max-width:982px;
+    width:100%;
+    margin:auto;
+    padding-top:15px;
+}
+
+span{
+    color:#666;
+}
+
+nav {
+text-align:right;
+    font-weight:300;
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+    ul > li {
+        display: inline-block;   
+        &:hover, &:hover > a  {
+            color: rgb(177, 177, 177);
+        }
+    }
+    ul > li a {
+        display: block;
+        padding: 0.5rem;
+        padding-left:12px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight:300;   
+    }
+
+    ul > li > ul {
+        display: none;
+        position: absolute;
+        li {
+            width: 150px;
+            background: #fff;
+            display: block;
+        }
+    }
+
+    ul > li > ul li a {
+        font-size: 0.9rem;        
+
+    }
+
+    ul > li:hover > ul {
+        display: block;
+    }
+}
+
+

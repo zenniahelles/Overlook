@@ -1,0 +1,35 @@
+.Rooms{
+    .Header{
+        width:100%;
+        object-fit:cover;
+        height:54vh;
+    }
+    .RoomsGrid{
+        width:100%;
+        max-width:982px;
+        margin:auto;
+        display:grid;
+        grid-template-columns: 70% auto;
+        grid-gap:60px;
+        padding-bottom:50px;
+        padding-top:50px;
+    }
+    .griditem2{
+        border-left: 1px solid rgb(185, 185, 185);
+        padding-left:25px;
+      }
+
+    .griditem1{
+        .ImagesGrid{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top:50px;
+            img{
+            width:100%;
+            object-fit:cover;
+            height:20vh;
+            width:10vw;
+            }
+        }
+    }
+}

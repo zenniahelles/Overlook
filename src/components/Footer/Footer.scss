@@ -1,0 +1,33 @@
+footer{
+    border-top: 1px solid rgb(202, 202, 202);
+    background:white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+    .FooterGrid{
+        padding: 25px 0 10px 0;
+        display:grid;
+        grid-template-columns: auto auto auto;
+        margin:auto;
+        max-width:882px;
+        width:100%;
+        font-size:8pt;
+        color: #b6b6b6;
+        a{
+            color:#b9b9b9;
+            padding:5px;
+        }
+        .FooterRight{
+            text-align:right;
+        }
+        .FooterMiddle{
+            text-align:center;
+        }
+        .socialicon{
+            padding:0 5px 0 5px;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.Reservation{
+
+    .Header{
+        width:100%;
+        object-fit:cover;
+        height:54vh;
+    }
+
+.reservationGrid{
+  display:grid;
+  grid-template-columns: 70% auto;
+  width:100%;
+  max-width:983px;
+  margin:auto;
+  grid-gap:60px;
+  padding-bottom:50px;
+  padding-top:50px;
+}
+
+.griditem1{
+  p{
+    padding-bottom:10px;
+    border-bottom: 1.5px dashed rgb(204, 204, 204);
+  }
+}
+
+.griditem2{
+  border-left: 1px solid rgb(185, 185, 185);
+  padding-left:25px;
+}
+
+.kontaktform{
+    margin-top:10px;
+  
+  label {
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  .pencil{
+    position:absolute;
+  }
+  
+  select{
+    width:410px;
+    padding: 6px 12px;
+    border-radius:4px;
+    border:#ccc 1px solid;
+  }
+  
+  .buttons{
+  display:inline-block;
+  }
+  
+  input[type='text'],
+  input[type='email'] {
+    display: inline-block;
+    width: 380px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* margin-bottom: 20px; */
+  }
+  
+  #comments{
+    height:100px;
+    width:380px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius:4px;
+  }
+  
+  fieldset{
+    border:none;
+    padding-bottom:0;
+    padding-top:0;
+    padding-left:0;
+  }
+  
+  .form-control {
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: red;
+    font-size:12px;
+  }
+  
+  button{
+    background:white;
+    color:black;
+    border:1px solid #ccc;
+    border-radius:4px;
+    padding: 8px 16px;
+  }
+}
+}

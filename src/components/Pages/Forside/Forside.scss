@@ -1,0 +1,54 @@
+.Forside{
+    width:100%;
+    max-width:982px;
+    margin:auto;
+    margin-top:50px;
+    h2{
+        font-weight:600;
+    }
+
+    .NyhederGrid{
+        border-bottom: 1.5px dashed #b9b9b9;
+
+    }
+    
+    }.NyhederGrid, .RoomsGrid{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-gap:40px;
+        padding-bottom:20px;
+        margin-bottom:40px;
+        h3{
+            font-size:16pt;
+            font-weight:300;
+            margin-bottom:0;
+        }
+        p{
+            font-weight:300;
+            margin-top:3px;
+            font-size:10pt;
+        }
+        img{
+            width:  20vw;
+            height: 20vh;
+            object-fit: cover;
+        }
+        .links{
+            text-decoration: none;
+            color:#373535;
+        }
+}
+
+.Nyhed{
+    width:100%;
+    max-width:982px;
+    margin:auto;
+    margin-top:50px;
+    .NyhedImg{
+        padding-left:20px;
+        padding-bottom:10px;
+        width:50%;
+        height:100%;
+        float:right;
+    }
+}
