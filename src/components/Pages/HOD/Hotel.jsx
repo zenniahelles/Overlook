@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import './HOD.scss';
 import Header from '../../images/iceland.jpg'
 import Search from '../../Search/Search'
+import { MdKeyboardArrowDown } from 'react-icons/md'
+import { FaThumbsUp } from 'react-icons/fa'
 
 const getParams = (url) => {
   return url
@@ -36,15 +38,19 @@ export default function Hotel(props) {
             <div className="griditem1">
             <div className="RoomSubGrid">
                     <div>
-                      <h3>{data.item.title}</h3>
-                      <p>{data.item.teaser}</p>
+                      <h2>{data.item.title}</h2>
+                      <p className="teaser">{data.item.teaser}</p>
                       <h3>Vores værelser</h3>
                     </div>
               {data.item && data.item.rooms.items.map(room => {
                   return (
                     <div className="griditem">
                         <img key={room.id} src={room.images[0].image} /> 
-                        <h3>{room.room_title}</h3>
+                        <h4>{room.room_title}</h4>
+                        <p>{room.area}. Plads til {room.num_persons} personer. </p>
+                        <p>{room.description}</p>
+                        <h4 className="price">Fra {room.day_price_normal} DKK</h4>
+                        <button><MdKeyboardArrowDown className="arrow" size="30"/>Vis mere</button>
                     </div>
                         )
               })}
@@ -55,7 +61,14 @@ export default function Hotel(props) {
                     <p>{data.item.address}</p>
                       <p>{data.item.phone}</p>
                       <h4>Faciliteter:</h4>
-                    <button>Like</button>
+                      {data.item && data.item.facilities.map(room => {
+                        return (
+                          <div>
+                            <p>{room.title}</p>
+                            </div>
+                        )
+                      })}
+                    <button className="like"><FaThumbsUp size="15"/> Like</button>
                 </div>
               </div>
           </div>
