@@ -4,11 +4,13 @@ import Form from  './Form.js'
 import { FcCheckmark } from "react-icons/fc";
 import Search from '../../Search/Search'
 import Header from '../../images/overlook-seurahuone.jpg'
+import Title from '../../images/title3.png'
 
 export default function Reservation(props) {
     return (
         <div className="Reservation">
             <Search/>
+            <div className="SiteTitle"><img src={Title} alt="site-title"/></div>
             <img className="Header" src={Header} alt='header'/>
             <section className="reservationGrid">
 

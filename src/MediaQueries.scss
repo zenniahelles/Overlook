@@ -1,0 +1,242 @@
+@media only screen and (max-width: 982px) {
+    .Rooms{
+        .RoomsGrid{
+            grid-template-columns: 55% auto;
+            margin:auto;
+            width:90%;
+            grid-gap:40px;
+        }
+    }
+
+    .citylist, .locationGrid{
+        padding:20px;
+        box-sizing:border-box;
+    }
+
+    .Rooms{
+        .griditem1{
+        .ImagesGrid{
+            grid-gap:10px;
+            img{
+                width:100%;
+            }   
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 900px) {
+
+    .Rooms .griditem1 .FaciliteterBox{
+        grid-template-columns: auto auto;
+    }
+
+    .Forside{
+        h2{
+            padding-left:20px;
+        }
+        .NyhederGrid, .RoomsGrid{
+            grid-template-columns: auto auto;
+            box-sizing:border-box;
+            img{
+                width:  40vw;
+                height: 30vh;
+                object-fit: cover;
+            }
+        }
+    }
+    .slider{
+        top:10px;
+        padding-top:50px;
+        .sliderTitle{
+            img{
+                width:75%;
+            };
+        }
+    }
+
+    .Reservation{
+        .reservationGrid{
+            grid-template-columns: 60% auto;
+    }
+}
+}
+
+@media only screen and (max-width: 770px) {
+    .Rooms{
+        .griditem1{
+        .ImagesGrid{
+            grid-template-columns: auto auto;
+            img{
+                width:100%;
+            }   
+        }
+    }
+}
+
+
+    .Reservation{
+        .reservationGrid{
+            grid-template-columns: auto;
+            text-align:center;
+    }
+}
+
+.HOD, .Rooms, .Reservation{
+    .Header{
+        padding-top:80px;
+        height: 40vh;
+    }
+    .SiteTitle{
+        height:40vh;
+        img{
+            padding-top:200px;
+            width:90%;
+        }
+    }
+}
+
+
+    .Forside{
+        text-align:center;
+    }
+    .Search{
+        top:105px;
+    .SearchGrid{
+          box-sizing:border-box;
+            .SearchRight{
+                .searchform{
+                    margin:5px 10px 5px 15px;
+                  grid-template-columns: 1.5fr 1fr 1fr;
+                  grid-gap:10px;
+                  grid-row-gap:0;
+                  .form-control{
+                      margin-bottom:8px;
+                  }
+                }
+            }
+        }
+}
+
+.slider{
+    top:80px;
+    padding-bottom:40px;
+}
+
+.NavGrid{
+    display:grid;
+    grid-template-columns: auto;
+    padding-left:10px;
+    padding-right:10px;
+    box-sizing:border-box;
+    background:black;
+    max-width:982px;
+    width:100%;
+    margin:auto;
+    padding-top:15px;
+    text-align:center;
+}
+nav {
+    text-align:center;
+}
+header{
+    height:105px;
+}
+}
+
+@media only screen and (max-width: 630px) {
+    .HOD, .Rooms, .Reservation{
+        .Header{
+            padding-top:80px;
+            height: 40vh;
+        }
+        .SiteTitle{
+            height:40vh;
+            img{
+                padding-top:230px;
+                width:90%;
+            }
+        }
+    }
+    
+    .Forside{
+        padding-top:120px;
+        text-align:center;
+        .NyhederGrid, .RoomsGrid{
+            grid-template-columns: auto;
+            box-sizing:border-box;
+            img{
+                width:  100%;
+                height: 30vh;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .slider{
+display:none;
+    }
+
+    header{
+        height:135px;
+    }
+
+    .Search{
+        top:135px;
+        .SearchGrid{
+              box-sizing:border-box;
+                .SearchRight{
+                    .searchform{
+                        margin:5px 10px 5px 15px;
+                      grid-template-columns: 1fr 1fr;
+                      grid-gap:10px;
+                      grid-row-gap:0;
+                      .form-control{
+                          margin-bottom:8px;
+                      }
+                      input[type='text']{
+                          max-width:100%;
+                      }
+                      .submitbutton{
+                        height:32px;
+                        width:50%;
+                        position: unset;
+                      }
+                    }
+                }
+            }
+    }
+.HOD{
+    .Menu{
+        box-sizing:border-box;
+        .links{
+            font-size:10pt;
+        }
+}
+}
+
+        .Destinations{
+        .citylist{
+            grid-template-columns: auto;
+            .locationGrid{
+                grid-template-columns: auto;
+                grid-gap:0px;
+            }
+        }
+        }
+        .Rooms{
+            .RoomsGrid{
+                grid-template-columns:auto;
+                grid-template-areas: "menu""content";
+                .griditem2{
+                    border-left:none;
+                    padding-bottom:10px;
+                    border-bottom:1px solid rgb(185, 185, 185);
+                    .RoomListGrid{
+                        display:grid;
+                        grid-template-columns: auto auto;
+                        }
+                }
+            }
+        }
+}

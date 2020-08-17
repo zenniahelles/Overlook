@@ -21,7 +21,7 @@ export default function Footer(props) {
 
 <div className="FooterRight">
 <Link to="../hoteller-og-destinationer" > Hoteller og destinationer </Link>
-<Link to="../rooms" > Værelser </Link>
+<Link to="../værelser" > Værelser </Link>
 <Link to="../reservation" > Reservation </Link>
 <Link to="../about" > Om Overlook </Link> 
 </div>

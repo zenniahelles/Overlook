@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './HOD.scss'
 import Header from '../../images/iceland.jpg'
 import Search from '../../Search/Search'
+import Title from '../../images/title1.png'
 
 
 export default function Destinations(props) {
@@ -68,6 +69,7 @@ const CountryList = props => {
     return (
         <div className="HOD">
              <Search/>
+             <div className="SiteTitle"><img src={Title} alt="page title"/></div>
             <img className="Header" src={Header} alt='header'/>
             <div className="Menu">
                 {apiData && apiData?.items.map((item) => {

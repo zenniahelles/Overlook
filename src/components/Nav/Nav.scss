@@ -1,6 +1,9 @@
 .NavGrid{
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30% 70%;
+    padding-left:10px;
+    padding-right:10px;
+    box-sizing:border-box;
     background:black;
     max-width:982px;
     width:100%;

@@ -12,7 +12,7 @@ export default function Forside(props) {
     return (
         <div>
             <Search />
-            <Slider />
+            <Slider className="Slider" />
             <div className="Forside">
                 <NewsFetch />
                 <ShowRooms />

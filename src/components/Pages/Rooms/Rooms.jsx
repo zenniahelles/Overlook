@@ -10,6 +10,7 @@ import  Room4  from '../../images/room4.jpg'
 import Person from '../../images/person-icon.svg'
 import Bed from '../../images/bed-icon.svg'
 import { FcCheckmark } from "react-icons/fc";
+import Title from '../../images/title2.png'
 
 
 export default function Rooms(props) {
@@ -19,6 +20,7 @@ export default function Rooms(props) {
     return (
         <div className="Rooms">
         <Search/>
+        <div className="SiteTitle"><img src={Title} alt="site-title"/></div>
         <img className="Header" src={Header} alt='header'/>
         <div className="RoomsGrid">
 
@@ -121,9 +123,10 @@ const RoomList = props => {
     }
 
     return (
-        <div className="HOD">
+        <div>
             <div>
             <h4>Værelsestyper</h4>
+            <div className="RoomListGrid">
                 {apiData && apiData?.items.map((item) => {
                     return (
                         <span key={item.id}>
@@ -133,7 +136,7 @@ const RoomList = props => {
                             </Link>
                         </span>
                     )
-                })}  
+                })}  </div>
             </div>
         </div>
     )

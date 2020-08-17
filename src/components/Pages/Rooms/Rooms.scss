@@ -4,6 +4,18 @@
         object-fit:cover;
         height:54vh;
     }
+
+    .SiteTitle{
+        position:absolute;
+        width:100%;
+        text-align:center;
+        height:54vh;
+        img{
+            padding-top:150px;
+            width:100%;
+            max-width:672px;
+        }
+    }
     .RoomsGrid{
         width:100%;
         max-width:982px;
@@ -13,11 +25,13 @@
         grid-gap:60px;
         padding-bottom:50px;
         padding-top:50px;
+        box-sizing:border-box;
+        grid-template-areas: "content menu";
         .links{
             .roomListImg{
                 width:100%;
                 object-fit:cover;
-                max-width:5vw;
+                max-width:7vw;
                 max-height:5vw;
                 display:inline-block;
                 vertical-align:middle;
@@ -33,18 +47,22 @@
     .griditem2{
         border-left: 1px solid rgb(185, 185, 185);
         padding-left:25px;
+        grid-area:menu;
+        .RoomListGrid{
+            display:grid;
+            grid-template-columns: auto;
+        }
       }
 
     .griditem1{
+        grid-area:content;
         .ImagesGrid{
             display:grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             margin-top:50px;
+            grid-gap:10px;
             img{
             width:100%;
-            object-fit:cover;
-            height:20vh;
-            width:10vw;
             }
         }
         .SVG{
